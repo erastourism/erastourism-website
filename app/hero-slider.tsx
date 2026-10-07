@@ -6,10 +6,10 @@ import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from "l
 const slides = [
   {
     location: "Bhitarkanika · Kendrapara",
-    title: "Into Odisha's",
-    emphasis: "mangrove wilds.",
-    description: "Cruise through winding creeks and discover the wild heart of coastal Odisha.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bhitarkanika_Wildlife_Sanctuary%2C_2015_%282%29.jpg",
+    title: "Plan a trip",
+    emphasis: "to Odisha.",
+    description: "Explore locally planned tours for pilgrimage, nature, culture and heritage across Odisha.",
+    image: "/wildlife/bhitarkanika-banner.jpg",
     alt: "Mangrove waterways in Bhitarkanika Wildlife Sanctuary",
   },
   {
@@ -33,8 +33,8 @@ const slides = [
     title: "Where the lake",
     emphasis: "meets the sky.",
     description: "Set out across Chilika for open-water horizons, island stops and sunset light.",
-    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=90",
-    alt: "Sunlight on open water at Chilika Lake",
+    image: "/chilika/satapada-banner.jpg",
+    alt: "A passenger boat crossing Chilika Lake near Satapada",
   },
 ];
 

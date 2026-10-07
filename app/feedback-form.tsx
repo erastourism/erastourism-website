@@ -20,7 +20,7 @@ export default function FeedbackForm() {
       `Rating: ${rating}/5`,
       `Feedback: ${feedback}`,
     ].filter(Boolean).join("\n");
-    const url = `https://wa.me/919237312521?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/917749074686?text=${encodeURIComponent(message)}`;
     setFeedbackUrl(url);
     window.open(url, "_blank", "noopener,noreferrer");
   }

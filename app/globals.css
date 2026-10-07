@@ -32,9 +32,9 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .utility-inner { width: min(1180px, calc(100% - 56px)); height: 100%; margin: auto; display: flex; align-items: center; gap: 25px; }
 .utility-inner a, .utility-note { display: inline-flex; align-items: center; gap: 8px; }
 .utility-email { margin-left: auto; }
-.site-header { height: 82px; padding: 0 max(28px, calc((100vw - 1180px) / 2)); display: flex; align-items: center; gap: 36px; background: var(--paper); position: relative; z-index: 5; }
+.site-header { height: 88px; padding: 0 max(28px, calc((100vw - 1180px) / 2)); display: flex; align-items: center; gap: 36px; background: var(--paper); position: relative; z-index: 5; }
 .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
-.brand-logo { display: block; width: 102px; height: auto; }
+.brand-logo { display: block; width: 110px; height: auto; }
 .desktop-nav { display: flex; gap: 29px; margin-left: auto; color: #53665d; font-size: 12px; font-weight: 550; }
 .desktop-nav a, .footer-links a { transition: color .2s ease; }
 .desktop-nav a:hover, .footer-links a:hover { color: var(--coral); }
@@ -89,8 +89,8 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .story-section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; padding-block: 108px; }
 .story-visual { height: 430px; position: relative; }
 .story-photo { position: absolute; background-size: cover; background-position: center; }
-.story-photo--main { top: 0; left: 45px; width: 74%; height: 86%; background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f7/Mukteshwar_Temple_Bhubaneswar.jpg"); }
-.story-photo--small { right: 0; bottom: 0; width: 45%; height: 43%; border: 9px solid var(--paper); background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Joranda_Water_Fall_Simlipal_Biosphere_Reserve.jpg"); }
+.story-photo--main { top: 0; left: 45px; width: 74%; height: 86%; background-image: url("/story/rare-temple-previous.jpeg"); }
+.story-photo--small { right: 0; bottom: 0; width: 45%; height: 43%; border: 9px solid var(--paper); background-image: url("/story/manu-tour-building.jpeg"); }
 .story-note { position: absolute; left: 0; bottom: 12%; width: 105px; height: 105px; display: flex; flex-direction: column; justify-content: center; gap: 7px; padding-left: 14px; background: var(--leaf); color: var(--ink); transform: rotate(-5deg); }
 .story-note span { font-family: var(--font-display); font-size: 19px; }
 .story-note small { font-size: 9px; line-height: 1.4; }
@@ -110,6 +110,17 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .story-stats strong { font-family: var(--font-display); font-size: 16px; font-weight: 500; }
 .story-stats small { color: #7f8a81; font-size: 9px; }
 
+.chandua-section { padding-block: 78px; overflow: hidden; color: white; background: #0c5658; }
+.chandua-layout { display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 72px; }
+.chandua-copy { max-width: 490px; }
+.chandua-eyebrow { color: #f1c64d; }
+.chandua-copy h2 { margin: 20px 0 14px; font-family: var(--font-display); font-size: clamp(38px, 4vw, 51px); font-weight: 400; line-height: 1.08; }
+.chandua-copy h2 i { color: #f1c64d; }
+.chandua-copy > p { max-width: 420px; color: #e0ece6; font-size: 13px; line-height: 1.85; }
+.chandua-art { position: relative; display: grid; place-items: center; justify-self: center; width: min(100%, 360px); aspect-ratio: 1; border: 8px solid #f1c64d; border-radius: 50%; background: repeating-conic-gradient(from -7deg, #df4935 0deg 15deg, #f1c64d 15deg 30deg, #f7eedc 30deg 45deg, #17777a 45deg 60deg); box-shadow: 0 0 0 5px #df4935, 0 0 0 11px #f1c64d, 0 18px 40px rgba(0, 20, 24, .28); }
+.chandua-art-inner { position: absolute; inset: 9%; overflow: hidden; border: 3px dashed #f7eedc; border-radius: 50%; background: radial-gradient(circle at 25% 25%, #f7eedc 0 2.2%, transparent 2.7%), radial-gradient(circle at 75% 25%, #f7eedc 0 2.2%, transparent 2.7%), radial-gradient(circle at 25% 75%, #f7eedc 0 2.2%, transparent 2.7%), radial-gradient(circle at 75% 75%, #f7eedc 0 2.2%, transparent 2.7%), repeating-conic-gradient(from 15deg, #f1c64d 0deg 12deg, #df4935 12deg 24deg, #0c5658 24deg 36deg, #f7eedc 36deg 48deg); box-shadow: inset 0 0 0 7px rgba(247, 238, 220, .8), inset 0 0 0 13px #df4935; }
+.chandua-rosette { position: absolute; top: 50%; left: 50%; width: 34%; aspect-ratio: 1; border: 5px solid #f7eedc; border-radius: 50%; background: radial-gradient(circle, #0c5658 0 20%, #f7eedc 21% 34%, #df4935 35% 52%, #f1c64d 53% 70%, #0c5658 71%); box-shadow: 0 0 0 5px #f1c64d; transform: translate(-50%, -50%); }
+
 .places-section { padding-block: 91px 103px; background-color: #eff0e7; background-image: radial-gradient(#dce2d5 0.7px, transparent 0.7px); background-size: 15px 15px; }
 .places-heading-row { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 36px; }
 .section-heading h2 { margin-bottom: 11px; }
@@ -119,9 +130,9 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .destination-card { position: relative; min-width: 0; overflow: hidden; color: white; background: #46645a; }
 .destination-card--tall { grid-row: span 2; }
 .destination-card--wide { grid-column: span 2; }
-.destination-image, .destination-shade { position: absolute; inset: 0; }
-.destination-image { background-position: center; background-size: cover; transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+.destination-image { position: absolute; inset: 0; background-position: center; background-size: cover; transition: transform .55s cubic-bezier(.2,.7,.2,1); }
 .destination-card:hover .destination-image { transform: scale(1.055); }
+.destination-shade { position: absolute; inset: 0; }
 .destination-shade { background: linear-gradient(0deg, rgba(14, 39, 34, .78), rgba(14, 39, 34, .02) 72%); }
 .destination-number { position: absolute; left: 19px; top: 17px; font-size: 9px; color: rgba(255, 255, 255, .76); }
 .destination-arrow { position: absolute; top: 14px; right: 15px; width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.56); border-radius: 50%; transition: background .2s ease; }
@@ -131,9 +142,16 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .destination-copy h3 { margin: 6px 0 5px; font-family: var(--font-display); font-size: 24px; font-weight: 400; }
 .destination-copy p { max-width: 355px; margin: 0; color: rgba(255,255,255,.79); font-size: 10px; line-height: 1.55; }
 .destination-card--tall .destination-copy h3 { font-size: 32px; }
-
 .royal-section { min-height: 488px; position: relative; display: grid; grid-template-columns: 1.05fr .95fr; overflow: hidden; color: white; background: var(--ink); }
-.royal-photo { position: absolute; inset: 0 40% 0 0; background-image: linear-gradient(90deg, rgba(12, 43, 36, .04), rgba(16, 47, 42, .28)), url("https://odishatour.in/wp-content/uploads/2020/11/Aul-King-Royal-Palace-Kendrapara-6.jpg"); background-size: cover; background-position: center; }
+.royal-stay-gallery { position: absolute; inset: 0 47% 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 1.2fr 1fr; gap: 8px; padding: 14px; }
+.royal-stay-image { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #355747; }
+.royal-stay-image img { object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.royal-stay-image:hover img { transform: scale(1.04); }
+.royal-stay-image--exterior { grid-column: 1 / 3; }
+.royal-stay-image--courtyard { grid-column: 3 / 4; }
+.royal-stay-image--hall { grid-column: 1 / 2; }
+.royal-stay-image--dining { grid-column: 2 / 3; }
+.royal-stay-image--drawing-room { grid-column: 3 / 4; }
 .royal-content { grid-column: 2; align-self: center; max-width: 490px; padding: 67px 40px 67px 33px; position: relative; }
 .eyebrow--light { color: var(--leaf); }
 .royal-content h2 { margin-top: 22px; font-size: 51px; }
@@ -154,6 +172,14 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .journey-card { min-width: 0; overflow: hidden; border: 1px solid transparent; background: #f0f0e7; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease; }
 .journey-card:hover, .journey-card:focus-within { transform: translateY(-5px); border-color: #a6cf19; background: #f5f8ec; box-shadow: 0 12px 28px rgba(18, 74, 50, .12); }
 .journey-image { height: 226px; position: relative; background-size: cover; background-position: center; transition: transform .45s cubic-bezier(.2,.7,.2,1), filter .3s ease; }
+.journey-image--gallery { background-image: none !important; }
+.journey-image--placeholder { background-color: #46645a; }
+.journey-photo-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1.25fr .75fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 4px; }
+.journey-photo-grid--two { grid-template-columns: 1.2fr 1fr; grid-template-rows: minmax(0, 1fr); }
+.journey-photo { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+.journey-photo--lead { grid-row: span 2; }
+.journey-photo-grid--two .journey-photo--lead { grid-row: auto; }
+.journey-photo img { object-fit: cover; }
 .journey-card:hover .journey-image, .journey-card:focus-within .journey-image { transform: scale(1.035); filter: saturate(1.08); }
 .journey-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(13, 44, 37, .24), transparent 50%); }
 .journey-image > span:first-child { position: absolute; z-index: 1; left: 15px; top: 15px; padding: 7px 9px; background: var(--leaf); color: var(--ink); font-size: 8px; font-weight: 700; }
@@ -175,6 +201,24 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .route-details p:hover { transform: translateX(2px); border-left-color: var(--leaf); background: #eef4e5; }
 .route-details p strong { display: block; margin-bottom: 4px; color: var(--ink); font-size: 12px; }
 .journey-info > a { display: inline-flex; align-items: center; gap: 9px; margin-top: 15px; font-size: 12px; font-weight: 650; }
+
+.royal-tour-section { padding-block: 92px; background: #eff0e7; }
+.royal-tour-layout { display: grid; grid-template-columns: 1.12fr .88fr; align-items: center; gap: 76px; }
+.royal-tour-gallery { min-width: 0; height: 430px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: 1.2fr 1fr; gap: 8px; }
+.royal-tour-image { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #355747; }
+.royal-tour-image img { object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.royal-tour-image:hover img { transform: scale(1.04); }
+.royal-tour-image--garden { grid-column: 1 / -1; }
+.royal-tour-image--facade { grid-column: 1 / 2; }
+.royal-tour-image--interior { grid-column: 2 / 3; }
+.royal-tour-image--arcade { grid-column: 3 / -1; }
+.royal-tour-copy { max-width: 445px; }
+.royal-tour-copy h2 { margin: 21px 0 14px; font-family: var(--font-display); font-size: 51px; font-weight: 400; line-height: 1.08; }
+.royal-tour-copy h2 i { color: var(--ocean); }
+.royal-tour-copy > p { color: var(--muted); font-size: 12px; line-height: 1.9; }
+.royal-tour-highlights { display: flex; flex-wrap: wrap; gap: 17px; margin: 22px 0; padding-block: 17px; border-block: 1px solid #d3dbcf; }
+.royal-tour-highlights span { display: inline-flex; align-items: center; gap: 8px; color: #52685c; font-size: 11px; }
+.royal-tour-highlights svg { flex: 0 0 auto; color: var(--ocean); }
 
 .quote-section { min-height: 373px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; color: white; background: #245346; text-align: center; }
 .quote-section::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14, 50, 42, .86), rgba(22, 66, 55, .76)), url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Joranda_Water_Fall_Simlipal_Biosphere_Reserve.jpg") center 44%/cover; }
@@ -222,18 +266,22 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .button--dark { color: white; background: var(--ink); }
 .contact-details { display: flex; flex-direction: column; align-items: stretch; gap: 11px; margin-top: 35px; padding: 22px 20px; border-top: 3px solid var(--ocean); background: #eef4e5; }
 .contact-details .eyebrow { margin-bottom: 4px; }
-.contact-details > a, .contact-details > p { display: inline-flex; align-items: center; gap: 11px; margin: 0; color: #365b4a; font-size: 13px; }
+.contact-details > a, .contact-details > p { display: inline-flex; align-items: center; gap: 11px; margin: 0; color: #365b4a; font-size: 15px; line-height: 1.55; }
 .contact-details > a:not(.contact-primary) { min-height: 37px; }
 .contact-details svg { flex: 0 0 auto; color: var(--ocean); }
+.contact-details > p.contact-address { align-items: flex-start; line-height: 1.55; }
+.contact-address > svg { margin-top: 2px; }
+.contact-address > span { min-width: 0; }
+.contact-address strong, .footer-contact strong { display: block; margin-bottom: 2px; color: var(--ink); font-size: 13px; }
 .contact-primary { min-height: 76px; padding: 12px; color: white !important; background: var(--ink); transition: background .2s ease; }
 .contact-primary:hover { background: var(--ocean); }
 .contact-primary > span { display: flex; flex-direction: column; gap: 3px; }
-.contact-primary small { color: #d6e5db; font-size: 10px; }
+.contact-primary small { color: #d6e5db; font-size: 12px; }
 .contact-primary strong { color: white; font-size: 20px; font-weight: 650; }
 .contact-primary > svg:first-child { color: var(--leaf); }
 .contact-primary .contact-link-arrow { margin-left: auto; color: white; }
 .contact-method-icon { width: 18px; height: 18px; display: grid; place-items: center; border: 1px solid #82988a; border-radius: 50%; color: var(--ink); font-size: 9px; font-weight: 700; }
-.contact-details > p { color: #52685c; font-size: 12px; }
+.contact-details > p { color: #52685c; font-size: 14px; }
 .enquiry-form { display: flex; flex-direction: column; gap: 20px; }
 .form-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px 13px; }
 .form-field { display: flex; min-width: 0; flex-direction: column; gap: 7px; color: var(--ink); font-size: 12px; font-weight: 650; }
@@ -255,12 +303,14 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
 .site-footer { padding: 43px max(28px, calc((100vw - 1110px) / 2)) 0; background: var(--ink-deep); color: white; }
 .footer-main { display: grid; grid-template-columns: 1.2fr .9fr .8fr 1fr; gap: 34px; align-items: start; padding-bottom: 38px; }
 .brand-logo--footer { width: 148px; padding: 4px; background: white; }
-.footer-main > p { margin: 4px 0; color: #c3d0c8; font-family: var(--font-display); font-size: 18px; line-height: 1.45; }
-.footer-links, .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 6px; color: #c3d0c8; font-size: 10px; }
-.footer-contact { color: #dce4dc; }
-.footer-bottom { min-height: 47px; display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid rgba(255,255,255,.17); color: #afbeb3; font-size: 9px; }
-.whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 6; width: 49px; height: 49px; display: grid; place-items: center; color: var(--ink); background: var(--leaf); border: 3px solid var(--paper); border-radius: 50%; box-shadow: 0 5px 18px rgba(10, 43, 34, .17); transition: transform .2s ease; }
-.whatsapp-float:hover { transform: translateY(-3px); }
+.footer-about { display: flex; flex-direction: column; gap: 7px; margin: 4px 0; color: #c3d0c8; font-size: 12px; line-height: 1.6; }
+.footer-about strong { color: white; font-family: var(--font-display); font-size: 16px; font-weight: 600; }
+.footer-about small { color: #d2ddd5; font-size: 11px; }
+.footer-about p { margin: 0; }
+.footer-links, .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 6px; color: #c3d0c8; font-size: 12px; }
+.footer-contact { color: #dce4dc; font-size: 12px; line-height: 1.55; }
+.footer-contact strong { color: #fff; }
+.footer-bottom { min-height: 47px; display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid rgba(255,255,255,.17); color: #afbeb3; font-size: 11px; }
 .travel-chat { position: fixed; right: 22px; bottom: 83px; z-index: 7; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
 .travel-chat-toggle { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 16px; border: 1px solid rgba(255,255,255,.7); border-radius: 25px; color: white; background: var(--ocean); box-shadow: 0 7px 22px rgba(7, 60, 43, .22); font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; transition: background .2s ease, transform .2s ease, box-shadow .2s ease; }
 .travel-chat-toggle:hover { transform: translateY(-2px); background: var(--ink); box-shadow: 0 10px 26px rgba(7, 60, 43, .27); }
@@ -294,6 +344,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .hero-stamp { right: 7%; }
   .story-section { gap: 55px; }
   .story-visual { height: 380px; }
+  .chandua-layout { gap: 42px; }
   .values-band { grid-template-columns: repeat(2, 1fr); row-gap: 18px; }
   .faq-contact { gap: 35px; }
   .feedback-inner { gap: 40px; }
@@ -305,8 +356,8 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .utility-bar { height: 34px; }
   .utility-inner { width: calc(100% - 32px); gap: 15px; font-size: 10px; }
   .utility-note, .utility-email { display: none !important; }
-  .site-header { height: 69px; padding-inline: 16px; gap: 11px; }
-  .brand-logo { width: 82px; }
+  .site-header { height: 76px; padding-inline: 16px; gap: 11px; }
+  .brand-logo { width: 90px; }
   .brand-logo--footer { width: 135px; }
   .desktop-nav { display: none; }
   .mobile-menu { display: block; order: 3; margin-left: auto; position: relative; }
@@ -344,6 +395,11 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .value-item small { font-size: 8px; line-height: 1.4; }
   .story-section { grid-template-columns: 1fr; gap: 37px; padding-block: 69px; }
   .story-visual { height: 330px; margin-right: 14px; }
+  .chandua-section { padding-block: 61px; }
+  .chandua-layout { grid-template-columns: 1fr; gap: 31px; }
+  .chandua-copy h2 { font-size: 40px; }
+  .chandua-copy > p { font-size: 12px; }
+  .chandua-art { width: min(270px, 82%); }
   .story-photo--main { left: 31px; width: 76%; height: 85%; }
   .story-photo--small { width: 44%; height: 42%; border-width: 7px; }
   .story-note { width: 87px; height: 87px; padding-left: 10px; }
@@ -367,7 +423,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .destination-number { left: 12px; top: 13px; }
   .destination-arrow { top: 9px; right: 9px; width: 29px; height: 29px; }
   .royal-section { min-height: 0; grid-template-columns: 1fr; padding-top: 255px; }
-  .royal-photo { inset: 0 0 auto; height: 280px; background-position: center 42%; }
+  .royal-stay-gallery { inset: 0 0 auto; height: 280px; gap: 6px; padding: 9px; }
   .royal-content { grid-column: 1; max-width: none; padding: 27px 22px 38px; }
   .royal-content h2 { font-size: 43px; }
   .royal-content > p { font-size: 11px; }
@@ -383,6 +439,13 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .journey-meta { font-size: 12px; }
   .route-details p { font-size: 14px; line-height: 1.8; }
   .route-details p strong { font-size: 13px; }
+  .royal-tour-section { padding-block: 65px; }
+  .royal-tour-layout { grid-template-columns: 1fr; gap: 30px; }
+  .royal-tour-gallery { height: 260px; grid-template-rows: 1.2fr 1fr; gap: 6px; }
+  .royal-tour-copy h2 { font-size: 42px; }
+  .royal-tour-copy > p { font-size: 11px; }
+  .royal-tour-highlights { gap: 12px; }
+  .royal-tour-highlights span { font-size: 10px; }
   .quote-section { min-height: 320px; }
   .quote-section p { font-size: 36px; }
   .faq-contact { grid-template-columns: 1fr; gap: 39px; padding-block: 70px; }
@@ -403,14 +466,13 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--coral); outlin
   .form-submit-row > p { max-width: none; }
   .form-submit-row .button { width: 100%; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 27px 18px; }
-  .footer-main > p { grid-column: 1 / -1; grid-row: 2; font-size: 17px; }
-  .footer-links { grid-column: 1; grid-row: 3; }
-  .footer-contact { grid-column: 2; grid-row: 3; display: flex; font-size: 9px; }
-  .footer-bottom { padding-block: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 8px; }
+  .footer-about { grid-column: 1 / -1; grid-row: 2; }
+  .footer-links { grid-column: 1; grid-row: 3; font-size: 11px; }
+  .footer-contact { grid-column: 2; grid-row: 3; display: flex; font-size: 11px; }
+  .footer-bottom { padding-block: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 10px; }
   .footer-bottom > span:nth-child(2) { text-align: right; }
   .footer-bottom a { grid-column: 1 / -1; }
-  .whatsapp-float { right: 14px; bottom: 14px; width: 45px; height: 45px; }
-  .travel-chat { right: 14px; bottom: 70px; gap: 9px; }
+  .travel-chat { right: 14px; bottom: 14px; gap: 9px; }
   .travel-chat-toggle { min-height: 46px; padding-inline: 14px; }
 }
 

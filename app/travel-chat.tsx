@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ArrowRight, Bot, MessageCircle, X } from "lucide-react";
 
-const whatsappUrl = "https://wa.me/919237312521?text=Hello%20ERAS%20Tourism%2C%20I%20have%20a%20travel%20question.";
+const whatsappUrl = "https://wa.me/917749074686?text=Hello%20ERAS%20Tourism%2C%20I%20have%20a%20travel%20question.";
 
 export default function TravelChat() {
   const [isOpen, setIsOpen] = useState(false);

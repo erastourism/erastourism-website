@@ -39,7 +39,7 @@ export default function EnquiryForm() {
       message ? `Details: ${message}` : "",
     ].filter(Boolean).join("\n");
 
-    const url = `https://wa.me/919237312521?text=${encodeURIComponent(enquiry)}`;
+    const url = `https://wa.me/917749074686?text=${encodeURIComponent(enquiry)}`;
     setWhatsappUrl(url);
     window.open(url, "_blank", "noopener,noreferrer");
   }
